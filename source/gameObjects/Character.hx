@@ -459,6 +459,17 @@ class Character extends FNFSprite
 				animation.addByPrefix('singRIGHT-alt', 'Parent Right Note Mom', 24, false);
 
 				playAnim('idle');
+			case 'sonicexe':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/sonicexe');
+				frames = tex;
+				animation.addByPrefix('idle', 'SONICmoveIDLE', 24, false);
+				animation.addByPrefix('singUP', 'SONICmoveUP', 24);
+				animation.addByPrefix('singRIGHT', 'SONICmoveRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'SONICmoveDOWN', 24);
+				animation.addByPrefix('singLEFT', 'SONICmoveLEFT', 24);
+				
+				playAnim('idle')
 			default:
 				// set up animations if they aren't already
 
